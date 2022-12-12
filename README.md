@@ -9,8 +9,8 @@ Modern template for **Django Admin Interface** coded on top of **Star Admin**, a
 **Links & Resources**
 
 - UI Kit: [Star Admin BS5](https://github.com/BootstrapDash/star-admin2-free-admin-template) by `BootstrapDash`
-- [Django Admin Star](#) - `LIVE Demo` (soon)
-- [Django Admin Star]() - `playground project` (soon)
+- [Django Admin Star](https://django-star-admin.appseed-srv1.com/) - `LIVE Demo`
+- [Django Admin Star](https://github.com/app-generator/django-admin-star_p) - `playground project`
 
 <br />
 
@@ -65,14 +65,14 @@ $ pip install git+https://github.com/app-generator/django-admin-star.git
 
 <br />
 
-> Add `admin_material` urls in your Django Project `urls.py` file
+> Add `admin_star` urls in your Django Project `urls.py` file
 
 ```python
     from django.urls import path, include
 
     urlpatterns = [
         ...
-        path('', include('admin_material.urls')),
+        path('', include('admin_star.urls')),
     ]
 ```
 
