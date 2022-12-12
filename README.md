@@ -1,6 +1,6 @@
 # [Django Admin Star](https://github.com/app-generator/django-admin-star)
 
-Modern template for **Django Admin Interface** coded on top of **Star Admin**, an open-source `Boostrap 5` design from `BootstrapDash`.
+Modern template for **Django Admin Interface** coded on top of **[Star Admin](https://github.com/app-generator/django-admin-star)**, an open-source `Bootstrap 5` design from [BootstrapDash](https://www.bootstrapdash.com?ref=23).
 
 > Actively supported by [AppSeed](https://appseed.us/) via `Email` and `Discord`.
 
@@ -8,7 +8,7 @@ Modern template for **Django Admin Interface** coded on top of **Star Admin**, a
 
 **Links & Resources**
 
-- UI Kit: [Star Admin BS5](https://github.com/BootstrapDash/star-admin2-free-admin-template) by `BootstrapDash`
+- UI Kit: [Star Admin BS5](https://www.bootstrapdash.com/product/star-admin-free?ref=23) by `BootstrapDash`
 - [Django Admin Star](https://django-star-admin.appseed-srv1.com/) - `LIVE Demo`
 - [Django Admin Star](https://github.com/app-generator/django-admin-star_p) - `playground project`
 
@@ -25,7 +25,7 @@ Modern template for **Django Admin Interface** coded on top of **Star Admin**, a
 - `Minimal Template` overriding
 - `Easy integration`
 
-Star Admin 2 Free is a free admin dashboard template built with Bootstrap 5. We took the original Star Admin Pro and gave it a design overhaul along with newly written code to create our best template yet. This is a modern-looking dashboard with a clean and elegant design. 
+**Star Admin** is a free admin dashboard template built with **[Bootstrap 5](https://www.admin-dashboards.com/bootstrap-5-templates/)**. We took the original `Star Admin` and gave it a design overhaul along with newly written code to create our best template yet. This is a modern-looking dashboard with a clean and elegant design. 
 
 <br />
 
