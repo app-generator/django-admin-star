@@ -1,0 +1,29 @@
+{% extends 'layouts/auth_base.html' %}
+{% load static %}
+
+{% block content %}
+  <div class="brand-logo">
+    <img src="{% static 'images/logo.svg' %}" alt="logo">
+  </div>
+  <h6 class="fw-light">Sign in to continue.</h6>
+  <form class="pt-3" method="post">
+    {% csrf_token %}
+    {% for field in form %}
+    <div class="form-group">
+      {{field}}
+    </div>
+    <small class="text-danger">{{ field.errors }}</small>
+    {% endfor %}
+    <div class="my-3">
+      <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">SIGN UP</button>
+    </div>
+    <div class="mb-2">
+      <button type="button" class="btn btn-block btn-facebook auth-form-btn">
+        <i class="ti-facebook me-2"></i>Connect using facebook
+      </button>
+    </div>
+    <div class="text-center mt-4 fw-light">
+      Already have an account? <a href="{% url 'login' %}" class="text-primary">Login</a>
+    </div>
+  </form>
+{% endblock content %}
