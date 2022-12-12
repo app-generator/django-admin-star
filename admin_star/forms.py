@@ -5,17 +5,35 @@ from django.utils.translation import gettext_lazy as _
 
 
 class RegistrationForm(UserCreationForm):
-  class Meta:
-    model = User
-    fields = ('username', 'email', )
+    password1 = forms.CharField(
+        label=_("Password"),
+        widget=forms.PasswordInput(attrs={
+            'class': 'form-control form-control-lg', 
+            'placeholder': 'Password'
+        }),
+    )
+    password2 = forms.CharField(
+        label=_("Password Confirmation"),
+        widget=forms.PasswordInput(attrs={
+            'class': 'form-control form-control-lg', 
+            'placeholder': 'Password Confirmation'
+        }),
+    )
 
-  def __init__(self, *args, **kwargs):
-    super().__init__(*args, **kwargs)
+    class Meta:
+        model = User
+        fields = ('username', 'email', )
 
-    for field in self.fields:
-      self.fields[field].widget.attrs.update({
-        'class': 'form-control form-control-lg',
-      })
+        widgets = {
+        'username': forms.TextInput(attrs={
+            'class': 'form-control form-control-lg',
+            'placeholder': 'Username'
+        }),
+        'email': forms.EmailInput(attrs={
+            'class': 'form-control form-control-lg',
+            'placeholder': 'Email'
+        })
+        }
 
 
 class LoginForm(AuthenticationForm):
@@ -35,25 +53,31 @@ class LoginForm(AuthenticationForm):
 
 class UserPasswordResetForm(PasswordResetForm):
     email = forms.EmailField(widget=forms.EmailInput(attrs={
-        'class': 'form-control'
+        "class": "form-control form-control-lg",
+        "placeholder": "Email"
     }))
 
 class UserSetPasswordForm(SetPasswordForm):
     new_password1 = forms.CharField(max_length=50, widget=forms.PasswordInput(attrs={
-        'class': 'form-control'
+        'class': 'form-control form-control-lg',
+        "placeholder": "New Password"
     }), label="New Password")
     new_password2 = forms.CharField(max_length=50, widget=forms.PasswordInput(attrs={
-        'class': 'form-control'
+        'class': 'form-control form-control-lg',
+        "placeholder": "Confirm New Password"
     }), label="Confirm New Password")
     
 
 class UserPasswordChangeForm(PasswordChangeForm):
     old_password = forms.CharField(max_length=50, widget=forms.PasswordInput(attrs={
-        'class': 'form-control'
+        'class': 'form-control form-control-lg',
+        "placeholder": "Old Password"
     }), label='Old Password')
     new_password1 = forms.CharField(max_length=50, widget=forms.PasswordInput(attrs={
-        'class': 'form-control'
+        'class': 'form-control form-control-lg',
+        "placeholder": "New Password"
     }), label="New Password")
     new_password2 = forms.CharField(max_length=50, widget=forms.PasswordInput(attrs={
-        'class': 'form-control'
+        'class': 'form-control form-control-lg',
+        "placeholder": "Confirm New Password"
     }), label="Confirm New Password")

@@ -10,11 +10,19 @@
   <form class="pt-3" method="post">
     {% csrf_token %}
 
+    {% if form.non_field_errors %}
+      {% for error in form.non_field_errors %}
+        <small class="text-danger">{{ error }}</small> 
+      {% endfor %}
+    {% endif %}
+
     {% for field in form %}
-    <div class="form-group">
-      {{field}}
-    </div>
+      <div class="form-group">
+        {{field}}
+      </div>
+      <small class="text-danger">{{ field.errors }}</small>
     {% endfor %}
+
     <div class="mt-3">
       <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">SIGN IN</button>
     </div>
@@ -25,7 +33,7 @@
           Keep me signed in
         </label>
       </div>
-      <a href="#" class="auth-link text-black">Forgot password?</a>
+      <a href="{% url 'password_reset' %}" class="auth-link text-black">Forgot password?</a>
     </div>
     <div class="mb-2">
       <button type="button" class="btn btn-block btn-facebook auth-form-btn">
