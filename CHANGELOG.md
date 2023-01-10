@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.0.3] 2023-01-10
+### Changes
+
+- Auth Pages: Disable Social Button
+  - Minor Change
+
 ## [1.0.2] 2023-01-10
 ### Changes
 
