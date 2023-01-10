@@ -8,14 +8,14 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
 name='django-admin-star',
-version='1.0.1',
+version='1.0.2',
 zip_safe=False,
 packages=find_packages(),
 include_package_data=True,
 description='Modern template for Django admin interface - Star Admin Design (BS5)',
 long_description=README,
 long_description_content_type="text/markdown",
-url='https://github.com/app-generator/django-admin-star',
+url='https://appseed.us/product/star-admin/django/',
 author='AppSeed.us',
 author_email='support@appseed.us',
 license='MIT License',
