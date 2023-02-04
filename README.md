@@ -1,6 +1,6 @@
 # [Django Admin Star](https://appseed.us/product/star-admin/django/)
 
-Modern template for **Django** that covers `Admin Section`, all authentication pages (registration included) crafted on top of **[Star Admin](https://appseed.us/product/star-admin/django/)**, an open-source `Bootstrap 5` design from `BootstrapDash`.
+Modern template for **Django** that covers `Admin Section`, all authentication pages (registration included) crafted on top of **[Star Admin](https://appseed.us/product/star-admin/django/)**, an open-source `Bootstrap 5` design from [BootstrapDash](https://www.bootstrapdash.com/product/star-admin-free?ref=23).
 
 > Actively supported by [AppSeed](https://appseed.us/) via `Email` and `Discord`.
 
